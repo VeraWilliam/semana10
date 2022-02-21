@@ -1,0 +1,84 @@
+.modal,.modal__habilidades, .modal__experiencia {
+  position: fixed; /*sale del flujo*/
+  background-color: #333;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 1000;
+  opacity: 0; /*no se ve el modal*/
+  pointer-events: none; /* dasactiva eventos del mouse*/
+  transition:opacity .5s
+  
+}
+.modal--show{
+   opacity: 1;
+   pointer-events:unset;
+   animation: scale .5s 1s backwards;
+}
+@keyframes scale {
+   0%{
+      transform: scale(0)
+   }
+   100%{
+      transform: scale(1)
+   }
+}
+
+.modal__container,.modal__container__habilidades, .modal__container__experiencia {
+  background-color: #fff;
+  width: 90%;
+  max-width: 750px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5em 1.5em;
+  border-radius: 25px;
+}  
+
+
+.modal__picture {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+  margin-bottom: 2em;
+ 
+}
+
+
+.modal__img {
+  width: 100%;
+  display: block;
+}
+.modal__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.modal__title--bold {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.modal__paragraph {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+.modal__close,.modal__close__habilidades,.grabar__habilidades, .modal__close__experiencia, .grabar__experiencia{
+   display: inline-block;
+   border: 1px solid;
+   padding: 1em 2em;
+   text-decoration: none;
+   color:#fff;
+   border-radius: .5rem;
+   background-color: #0f7058;
+   width:100%;
+   transition: 1s ease-in-out;
+}
+
+@media (max-width:750px){
+   .modal__title{
+      font-size: 1.7rem;
+   }
+}
+

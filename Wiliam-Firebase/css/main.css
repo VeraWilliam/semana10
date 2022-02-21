@@ -1,0 +1,80 @@
+:root {
+  --theme-color: #fff;
+  --primary-color: #1b7161;
+  --secundary-color: #130d0d; 
+  --text-color-inverse: #fff;
+  --text-color: #231f20;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #1b7161;
+  --font: "Roboto", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section[id]{
+  /* se aplica por el menu fixed */
+  scroll-margin-top:70px ;
+}
+
+body {
+  margin: 0;
+  padding-top:  70px;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  font-family: var(--font);
+  font-size: 16px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.horizontal-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.vertical-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+ 
+}
+
+.btnmas{
+   display: inline-block;
+   width: 40px;
+   border-radius: 50%;
+   background-color: red;
+   color:#fff;
+   transition: 0.3s;
+}
+
+.btnmas:hover{
+   background-color:red;
+   cursor:pointer;
+   font-size: 105%;
+}
+
+@media (min-width: 950px) {
+  .horizontal-padding {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  
+  .vertical-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+

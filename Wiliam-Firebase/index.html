@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="William Vera" />
+    <meta name="description" content="Portafolio web" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Vera</title>
+
+    <!-- fuentes de google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/skill.css" />
+    <link rel="stylesheet" href="./css/experiencies.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/course.css" />
+
+    <!-- <link rel="stylesheet" href="./css/modal.css" /> -->
+    <link rel="stylesheet" href="./css/modal.css" />
+    <script defer src="./js/app.js" type="module"></script>
+    <script defer src="./js/app2.js" type="module"></script>
+  </head>
+  <body>
+
+    <!-- Menu -->
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img height="50" width="50" src="./img/Vera William.jpeg" alt="programador" />
+          <div class="logo"> William Vera <br /> (Estudiante) </div>
+        </a>
+        <!-- diseño de menu de opciones -->
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="./img/menu icon.svg" alt="Menú" />
+        </button>
+        <ul class="menu">
+          <!-- despues del diseño de menu de opciones -->
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="./img/cerrar icon.svg" alt="Cerrar" />
+          </button>
+
+          <li><a href="#profile" class="selected">Perfil</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#courses">Cursos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Perfil -->
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile" id="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br />William Vera</h1>
+          <p class="profile-details">
+            Soy un estudiante de la Universidad Estatal de Milagro "Unemi" estoy siguiendo la carrera de Ingieneria de Software, me gusta lo que tenga que ver con programación, naci en Manabi y me crie en Naranjal-Guayas. 
+          </p>
+          <button class="profile-btn">Download cv</button>
+        </div>
+        <div class="profile-img-section">
+          <img
+            class="profile-img"
+            src="./img/perfil.jpg"
+            alt="programador"
+          />
+          <div class="profile-img-line"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Experiencia -->
+    <section class="experiences" id="experience">
+      <img src="img/wave.svg" alt="división" class="wave" />
+      <div class="experiences-body">
+        <h2 class="experiences-title"></h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <!-- <div class="experience-date">2020-2021</div>
+            <div class="experience-company">Base de Datos</div>
+            <div class="experience-position">Inventariado de una Tienda</div>
+            <div class="experience-description">
+              Hemos realizado un proyecto con la ayuda de Microsoft SQL Server en el cual pudimos realizar la creacion de un almacenamientopara el inventariado de una tienda y con su respectivo mantenimiento.
+            </div> -->
+          </div>
+          <div class="experience experience_left">
+            <!-- <div class="experience-date">2020-2021</div>
+            <div class="experience-company">Redes de Datos</div>
+            <div class="experience-position">Cisco</div>
+            <div class="experience-description">
+              Hemos realizado una topografia con la ayuda de Cisco Packet Tracer con el fin de que todos los equipos se deben comunicar entre sí mediante por SSH al switch control.
+            </div> -->
+          </div>
+          <!-- <div class="line"></div> -->
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <!-- <div class="experience-date">2022</div>
+            <div class="experience-company">Programacion Orientada a Objeto</div>
+            <div class="experience-position">Portafolio</div>
+            <div class="experience-description">
+              Hemos realizado una pagina web con la ayuda de Visual Studio Code para asi tener nuestro portafolio personal mediante el lenguaje de programación.
+            </div> -->
+          </div>          
+        </div>
+      </div>
+      <img src="img/wave.svg" alt="división" class="wave wave_bottom" />
+    </section>
+
+    <!-- Habilidades -->
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills" id="skills">
+        <h2 class="skills-title"></h2>
+        <ul class="skills-list">
+       
+        </ul>
+      </section>
+    </div>
+    
+    <!--    Cursos -->
+    <div class="horizontal-padding vertical-padding">
+      <h2 class="cursos-title">Cursos</h2>
+      <section class="cursos" id="courses">
+        <div class="card">
+          <div class="imgBx">
+            <img src="./img/html.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>HTML</h2>
+            <p>
+              Es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="./img/css.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>CSS</h2>
+            <p>
+              Es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML y derivados.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="./img/js.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>JavaScrit</h2>
+            <p>
+              Es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contacto -->
+    <div id="contacto" class="horizontal-padding">
+      <section class="contact" id="contact">
+        <div class="contact-dat">
+          <h2 class="contact-title">Contacto</h2>
+          <p>Direccion:</p>
+          <p>Naranjal-Guayas, Ecuador</p>
+          <p>Email:</p>
+          <p>wverah@unemi.edu.ec</p>
+          <p>Deje su mensaje y con gusto le respondere</p>          
+        </div>
+        <form action="" class="contact-form">
+          <div class="contact-form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" />
+          </div>
+          <div class="contact-form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="contact-form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="" id="mensaje" cols="30" rows="4"></textarea>
+          </div>
+          <!-- <a href="#modal" id="enviar" class="contact-form-enviar">
+            Enviar
+          </a> -->
+          <a href="#" id="enviar" class="contact-form-enviar">
+            Enviar
+          </a>
+        </form>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <section id="modal" class="modal ">
+      <div class="modal__container">
+        <figure class="modal__picture">
+          <img src="./img/perfil.jpg" alt="" class="modal__img" />
+        </figure>
+        <h2 class="modal__title">
+          Gracias por su inscripcion, le saluda
+          <span class="modal__title modal__title--bold">William Vera</span>
+        </h2>
+        <p id="informacion" class="modal__paragraph">
+         
+        </p>
+        <!-- <a href="#contacto" class="modal__close">Aceptar</a> -->
+        <button class="modal__close">Aceptar</button>
+      </div>
+    </section>
+    <!-- fin de modal -->
+
+     <!-- Modal habilidades -->
+    <section id="modal__habilidades" class="modal__habilidades">
+      <div class="modal__container__habilidades">
+        
+        <div class="modal__paragraph__habilidades">
+          <!-- formulario de habilidades -->
+          <form action="" class="contact-form" id="habilidades__form">
+            <div class="contact-form-group">
+              <h2 for="nombre" class="titulo">Ingresar Habilidades</h2>
+            </div>
+
+            <div class="contact-form-group">
+              <label for="descripcion">Descripcion</label>
+              <input type="text" id="descripcion" />
+            </div>
+            
+            <button type="submit" id="grabar__habilidades" class="grabar__habilidades">
+              Insertar
+            </button>
+          </form>
+          <!-- Listar Habilidades -->
+          <div class="consulta none table-responsive" id="consulta">
+               <h3>Consulta de Habilidades</h3>
+              <table border = 0 class="consulta-est" id="consulta-est" border="1">
+                <thead>
+                    <th >Habilidad</th>
+                    <th >Acciones</th>
+                </thead>
+                <tbody class="detalle-est" id="detalle-habilidades">
+                   
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+        <!-- <a href="#contacto" class="modal__close">Aceptar</a> -->
+        <button class="modal__close__habilidades">Regresar</button>
+      </div>
+    </section>
+    <!-- fin de modal habilidades -->
+
+    <!-- Modal Experiencia-->
+    <section id="modal__experiencia" class="modal__experiencia">
+      <div class="modal__container__experiencia">        
+        <div class="modal__paragraph__experiencia">
+
+          <!-- formulario de experiencia -->
+          <form action="" class="contact-form" id="experiencia__form">
+            <div class="contact-form-group">
+              <h2 for="nombre" class="titulo">Ingresar Experiencia</h2>
+            </div>
+
+            <div class="contact-form-group">
+              <label for="date">Fecha</label>
+              <input type="text" id="date" />
+            </div>
+
+            <div class="contact-form-group">
+              <label for="company">Campo</label>
+              <input type="text" id="company" />
+            </div>
+
+            <div class="contact-form-group">
+              <label for="position">Tema</label>
+              <input type="text" id="position" />
+            </div>
+
+            <div class="contact-form-group">
+              <label for="description">Descripcion</label>
+              <input type="text" id="description" />
+            </div>
+
+            <button type="submit" id="grabar__experiencia" class="grabar__experiencia">
+              Insertar
+            </button>
+          </form>
+
+          <!-- Listar eEperiencia -->
+          <div class="consulta none table-responsive" id="consulta">
+               <h3>Consulta de Experiencia</h3>
+              <table border = 0 class="consulta-est" id="consulta-est" border="1">
+                <thead>
+                    <th >Experiencia</th>
+                    <th >Acciones</th>
+                </thead>
+                <tbody class="detalle-est" id="detalle-experiencia">
+                   
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+        <!-- <a href="#contacto" class="modal__close">Aceptar</a> -->
+        <button class="modal__close__experiencia">Regresar</button>
+      </div>
+    </section>
+    <!-- fin de modal Experiencia -->
+    
+  </body>
+</html>
